@@ -91,7 +91,7 @@ import { errorHandler } from '@imtiaz/custom-errors';
 
 // After your routes
 app.use(errorHandler);
-
+```
 
 ## Available Error Types
 * BadRequestError: Indicates that the server cannot process the request due to a client error (400).

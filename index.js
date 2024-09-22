@@ -1,3 +1,5 @@
+import errorHandler from './errorHandler.js';
+
 class AppError extends Error {
     constructor(message, statusCode) {
       super(message);
@@ -66,4 +68,4 @@ class AppError extends Error {
     InternalServerError,
     ServiceUnavailableError
   };
-  export { default as errorHandler } from './errorHandler';
+  export { errorHandler };

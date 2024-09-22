@@ -7,7 +7,7 @@ A lightweight npm package for custom error handling in Node.js applications. Thi
 To install the package, run the following command:
 
 ```bash
-npm install @imtiaz/custom-errors
+npm install @emtiaj/custom-errors
 ```
 
 ## Usage
@@ -15,14 +15,14 @@ Importing Custom Errors
 You can import the custom error classes in your application like this:
 
 ```javascript
-import { BadRequestError, UnauthorizedError, NotFoundError } from '@imtiaz/custom-errors';
+import { BadRequestError, UnauthorizedError, NotFoundError } from '@emtiaj/custom-errors';
 ```
 
 ## Creating a Controller Example
 Here's how to use the custom errors in your controller methods:
 
 ```javascript
-import { BadRequestError, UnauthorizedError, NotFoundError } from '@imtiaz/custom-errors';
+import { BadRequestError, UnauthorizedError, NotFoundError } from '@emtiaj/custom-errors';
 
 const userController = {
   async getUser(req, res, next) {
@@ -87,7 +87,7 @@ app.use(errorHandler);
 To use the error handler in your Express application, import it and use it as middleware:
 
 ```javascript
-import { errorHandler } from '@imtiaz/custom-errors';
+import { errorHandler } from '@emtiaj/custom-errors';
 
 // After your routes
 app.use(errorHandler);

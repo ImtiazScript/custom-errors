@@ -65,4 +65,5 @@ class AppError extends Error {
     ConflictError,
     InternalServerError,
     ServiceUnavailableError
-  };  
+  };
+  export { default as errorHandler } from './errorHandler';

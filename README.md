@@ -14,14 +14,14 @@ npm install @imtiaz/custom-errors
 Importing Custom Errors
 You can import the custom error classes in your application like this:
 
-```
+```javascript
 import { BadRequestError, UnauthorizedError, NotFoundError } from '@imtiaz/custom-errors';
 ```
 
 ## Creating a Controller Example
 Here's how to use the custom errors in your controller methods:
 
-```
+```javascript
 import { BadRequestError, UnauthorizedError, NotFoundError } from '@imtiaz/custom-errors';
 
 const userController = {
@@ -64,7 +64,7 @@ const userController = {
 ## Error Handling Middleware
 Make sure to set up an error handling middleware to catch and respond to these errors:
 
-```
+```javascript
 const errorHandler = (err, req, res, next) => {
   const statusCode = err.statusCode || 500;
   const message = err.message || 'An unexpected error occurred.';
@@ -78,9 +78,20 @@ const errorHandler = (err, req, res, next) => {
 ```
 
 ## Use the error handler in your Express app.js/server.js
-```
+```javascript
 app.use(errorHandler);
 ```
+
+## Using Default Error Handling Middleware
+
+To use the error handler in your Express application, import it and use it as middleware:
+
+```javascript
+import { errorHandler } from '@imtiaz/custom-errors';
+
+// After your routes
+app.use(errorHandler);
+
 
 ## Available Error Types
 * BadRequestError: Indicates that the server cannot process the request due to a client error (400).

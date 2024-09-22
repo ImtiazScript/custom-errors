@@ -1,0 +1,22 @@
+{
+  "name": "custom-errors",
+  "version": "1.0.0",
+  "description": "This is a custom error handler to create generic error",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/imtiazUAP/custom-errors.git"
+  },
+  "keywords": [
+    "custom-errors"
+  ],
+  "author": "Imtiaz Ahmed",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/imtiazUAP/custom-errors/issues"
+  },
+  "homepage": "https://github.com/imtiazUAP/custom-errors#readme"
+}

@@ -1,8 +1,9 @@
 {
   "name": "@emtiaj/custom-errors",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "A lightweight custom error handler for Node.js applications, enabling easy creation and management of generic and specific error types with customizable messages and status codes.",
   "main": "index.js",
+  "types": "index.d.ts",
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
